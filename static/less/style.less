@@ -1,0 +1,84 @@
+/* fonts */
+
+@font-face { font-family: Tuffy; src: url('/static/fonts/tuffy_regular.ttf');}
+@font-face { font-family: Tuffy; font-weight: bold; src: url('/static/fonts/tuffy_bold.ttf');}
+@font-face { font-family: Tuffy; font-style: italic; src: url('/static/fonts/tuffy_italic.ttf');}
+@font-face { font-family: Tuffy; font-weight: bold; font-style: italic; src: url('/static/fonts/tuffy_bold_italic.ttf');}
+
+/* coloration */
+
+@lightest-grey: #f8f8f8;
+@medium-grey: #666;
+@dark-grey: #333;
+@darkest-grey: #222;
+@black: #000;
+@orange: #FF6D3D;
+@white: #FFF;
+@green: #c1e857;
+@blue: #7fc4ff;
+@trans-blue: rgba(100, 200, 255,.3);
+@face: Tuffy, Helvetica, sans-serif;
+
+@normal-size: 13pt;
+@default-text-color: @darkest-grey;
+@emphasized-text-color: @black;
+
+@pagebg: @lightest-grey url('/static/images/light-hatch.png') repeat;
+@bg: rgba(255,255,255,.6);
+
+body { 
+    font: @normal-size @face; 
+    background: @pagebg; 
+    color: @default-text-color; 
+    width: 100%; 
+    padding: 0; 
+}
+
+.link_like, a, body .ui-widget-content a { color: @orange; text-decoration: none; cursor:pointer; cursor:hand; }
+
+h1, h2, h3, h4, h5 {
+    font-family: @face;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.container {
+    background: @bg;
+    padding-bottom: 20px;
+    max-width: 950px;
+}
+
+section, .row {
+    padding-bottom: 20px;
+}
+
+table {
+    td, th {
+        vertical-align: top;
+        padding: .5em 1em .5em .5em;
+    }
+    th {
+        padding-bottom: 0;
+    }
+
+    .highlight {
+        background: fadeout(@blue, 40%);
+    }
+}
+
+.help {
+    font-size: .8em;
+    color: @medium-grey;
+}
+
+.giant {
+    font-size: 72pt;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 1em;
+    display: block;
+    width: 100%;
+    text-align: center; 
+}
