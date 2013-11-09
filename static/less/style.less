@@ -16,7 +16,7 @@
 @white: #FFF;
 @green: #c1e857;
 @blue: #7fc4ff;
-@trans-blue: rgba(100, 200, 255,.3);
+@trans-blue: fadeout(@blue, 40%);
 @face: Tuffy, Helvetica, sans-serif;
 
 @normal-size: 13pt;
@@ -44,6 +44,16 @@ h1 {
     font-size: 3em;
 }
 
+h2, h3 {
+    margin: 8px -15px;
+    padding: 15px 15px 10px 15px;
+    background: @trans-blue;
+}
+
+h3 {
+    background: fadeout(@green, 10%);
+}
+
 .container {
     background: @bg;
     padding-bottom: 20px;
@@ -64,7 +74,7 @@ table {
     }
 
     .highlight {
-        background: fadeout(@blue, 40%);
+        background: fadeout(@green, 40%);
     }
 }
 
@@ -80,7 +90,7 @@ table {
     }
 }
 
-.my-button(@color: @blue) {
+.my-button(@color: @orange) {
     width: 100%;
     font-size: 1.6em;
     .rad-button(@color);
