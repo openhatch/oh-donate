@@ -32,16 +32,16 @@
                     <thead>
                         <th>Level</th>
                         <th style="min-width: 150px;">Monthly</th>
-                        <th style="min-width: 110px;">Lump-sum</th>
+                        <th style="min-width: 130px;">Lump-sum</th>
                         <th>Thank you gift</th>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Fan</td>
                             <td>
-                                <input type="radio">$5/month</td>
+                                <a class="donation-button green">$5/month</a></td>
                             <td>
-                                <input type="radio">$20</td>
+                                <a class="donation-button green">$20</a></td>
                             <td>
                                 <p>Stickers and our sincere thanks!</p>
                             </td>
@@ -49,9 +49,11 @@
                         <tr>
                             <td>Supporter</td>
                             <td>
-                                <input type="radio">$10/month</td>
+                                <a class="donation-button green">$10/month</a>
+                            </td>
                             <td>
-                                <input type="radio">$150</td>
+                                <a class="donation-button green">$150</a>
+                            </td>
                             <td>
                                 <p>
                                     Thanks, stickers, and an OpenHatch t-shirt!
@@ -63,9 +65,9 @@
                         <tr class="highlight">
                             <td>Aficionado</td>
                             <td>
-                                <input type="radio" checked>$20/month</td>
+                                <a class="donation-button green">$20/month</a>
                             <td>
-                                <input type="radio">$300</td>
+                                <a class="donation-button green">$300</a>
                             <td>
                                 <p>
                                     All of the above, plus an original, custom sketch of Sufjan the baby penguin!
@@ -77,9 +79,9 @@
                         <tr>
                             <td>Impresario</td>
                             <td>
-                                <input type="radio">$60/month</td>
+                                <a class="donation-button green">$60/month</a>
                             <td>
-                                <input type="radio">$1000</td>
+                                <a class="donation-button green">$1000</a>
                             <td>
                                 <p>All of the above, and an OpenHatch soccer-style knit scarf!</p>
                             </td>
@@ -87,9 +89,9 @@
                         <tr>
                             <td>Patron</td>
                             <td>
-                                <input type="radio">$120/month</td>
+                                <a class="donation-button green">$120/month</a>
                             <td>
-                                <input type="radio">$2000</td>
+                                <a class="donation-button green">$2000</a>
                             <td>
                                 <p>
                                     All of the above, plus we will send you a delicious pie.
@@ -103,9 +105,12 @@
                         <tr>
                             <td>Maverick</td>
                             <td>
-                                <input type="text" size="4">/month</td>
+                                <input type="text" size="4">/month
+                                <input type="submit" class="donation-button green" value="Donate!" style="margin-top: 4px;">
+                            </td>
                             <td>
-                                <input type="text" size="8"></td>
+                                <input type="text" size="8">
+                                <input type="submit" class="donation-button green" value="Donate!" style="margin-top: 4px;">
                             <td>
                                 <p>
                                     Custom donation amount.
@@ -117,10 +122,6 @@
                         </tr>
                     </tbody>
                 </table>
-                <div class="row">
-                    <div class="col-md-12">
-                        <input type="submit" class="donation-button green" value="Donate!"></div>
-                </div>
             </div>
         </div>
     </section>
