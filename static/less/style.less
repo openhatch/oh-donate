@@ -87,6 +87,7 @@ section, .row {
 }
 
 table {
+    font-size: .8em;
     td, th {
         vertical-align: top;
         padding: .5em 1em 0 .5em;
@@ -107,6 +108,12 @@ table {
         font-size: 1.2em;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    table {
+        font-size: @normal-size;
     }
 }
 

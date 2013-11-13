@@ -81,6 +81,9 @@ section,
 .row {
   padding-bottom: 20px;
 }
+table {
+  font-size: .8em;
+}
 table td,
 table th {
   vertical-align: top;
@@ -103,6 +106,11 @@ table .donation-button.green:hover {
   font-size: 1.2em;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  table {
+    font-size: 13pt;
+  }
 }
 .help {
   font-size: .8em;
@@ -179,7 +187,7 @@ table .donation-button.green:hover {
   text-decoration: none;
 }
 .extra-space .row {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 .credit {
   display: block;
