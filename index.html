@@ -103,8 +103,20 @@
                         <tr>
                             <td>Maverick</td>
                             <td>
-                                <input type="text" size="4">/month
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                                <input type="hidden" name="business" value="openhatch-paypal@opensource.org">
+                                <input type="hidden" name="lc" value="US">
+                                <input type="hidden" name="item_name" value="OpenHatch">
+                                <input type="hidden" name="no_note" value="1">
+                                <input type="hidden" name="src" value="1">
+                                <input type="hidden" name="p3" value="1">
+                                <input type="hidden" name="t3" value="M">
+                                <input type="hidden" name="currency_code" value="USD">
+                                <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHostedGuest">
+                                <input name="a3" type="text" size="4">/month
                                 <input type="submit" class="donation-button green" value="Donate!" style="margin-top: 4px;">
+                            </form>
                             </td>
                             <td>
                             <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
