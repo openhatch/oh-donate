@@ -201,3 +201,6 @@ table .donation-button.green:hover {
   color: #f9f9f9;
   text-decoration: underline;
 }
+.quote {
+  font-size: 1.2em;
+}
