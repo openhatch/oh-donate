@@ -23,7 +23,7 @@
 body {
   font: 13pt Tuffy, Helvetica, sans-serif;
   line-height: 1.8em;
-  background: #f8f8f8 url('/static/images/light-hatch.png') repeat;
+  background: #f8f8f8 url('/static/img/light-hatch.png') repeat;
   color: #222222;
   width: 100%;
   padding: 0;
@@ -203,4 +203,13 @@ table .donation-button.green:hover {
 }
 .quote {
   font-size: 1.2em;
+  color: black;
+}
+blockquote {
+  border-left: 4pt solid rgba(127, 196, 255, 0.6);
+  border-right: 4pt solid rgba(127, 196, 255, 0.6);
+}
+blockquote .help {
+  display: block;
+  text-align: right;
 }
